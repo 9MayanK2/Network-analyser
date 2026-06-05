@@ -17,18 +17,18 @@ A powerful packet sniffer that captures, parses, logs, and visualises every pack
 - 📝 **Alert Logging** - Suspicious packets logged to `logs/alerts.log`
 
 ## 🏗️ Architecture
-network-analyser/
-├── main.py # Entry point, CLI args, thread orchestration
-├── sniffer.py # Raw socket + capture loop (background thread)
-├── parser.py # Parse Ethernet → IP → TCP/UDP/ICMP
-├── db.py # SQLite operations + thread-safe connections
-├── alerts.py # Suspicious port detection + NULL scan
-├── dashboard.py # Rich Live terminal dashboard
-├── data/
-│ └── traffic.db # Auto-created SQLite database
-├── logs/
-│ └── alerts.log # Suspicious packet logs
-└── requirements.txt # Dependencies
+- network-analyser/
+- ├── main.py # Entry point, CLI args, thread orchestration
+- ├── sniffer.py # Raw socket + capture loop (background thread)
+- ├── parser.py # Parse Ethernet → IP → TCP/UDP/ICMP
+- ├── db.py # SQLite operations + thread-safe connections
+- ├── alerts.py # Suspicious port detection + NULL scan
+- ├── dashboard.py # Rich Live terminal dashboard
+- ├── data/
+- │ └── traffic.db # Auto-created SQLite database
+- ├── logs/
+- │ └── alerts.log # Suspicious packet logs
+- └── requirements.txt # Dependencies
 
 ## 📋 Prerequisites
 
@@ -42,7 +42,7 @@ network-analyser/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/network-analyser.git
+git clone https://github.com/9MayanK2/network-analyser.git
 cd network-analyser
 
 python3 -m venv venv
